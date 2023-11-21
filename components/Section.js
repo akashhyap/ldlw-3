@@ -6,14 +6,14 @@ const Wrapper = styled.div`
   position: relative;
   width: 100%;
   background-color: ${(props) => props?.backgroundColor};
-  margin-top: ${(props) => props?.marginTop};
-  margin-bottom: ${(props) => props?.marginBottom};
-  padding-top: ${(props) => props?.paddingTop};
-  padding-bottom: ${(props) => props?.paddingBottom};
+  margin-top: ${(props) => props?.$marginTop};
+  margin-bottom: ${(props) => props?.$marginBottom};
+  padding-top: ${(props) => props?.$paddingTop};
+  padding-bottom: ${(props) => props?.$paddingBottom};
 
   @media (min-width: 800px) {
-    padding-left: ${(props) => props?.paddingLeft};
-    padding-right: ${(props) => props?.paddingRight};
+    padding-left: ${(props) => props?.$paddingLeft};
+    padding-right: ${(props) => props?.$paddingRight};
   }
 `;
 
@@ -82,12 +82,12 @@ const Section = ({ blok }) => {
   return (
     <Wrapper
       backgroundColor={blok?.background_color?.color}
-      marginTop={blok?.marginTop}
-      marginBottom={blok?.marginBottom}
-      paddingTop={blok?.paddingTop}
-      paddingBottom={blok?.paddingBottom}
-      paddingLeft={blok?.paddingLeft}
-      paddingRight={blok?.paddingRight}
+      $marginTop={blok?.marginTop}
+      $marginBottom={blok?.marginBottom}
+      $paddingTop={blok?.paddingTop}
+      $paddingBottom={blok?.paddingBottom}
+      $paddingLeft={blok?.paddingLeft}
+      $paddingRight={blok?.paddingRight}
       {...storyblokEditable(blok)}
     >
       <div

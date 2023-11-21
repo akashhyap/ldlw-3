@@ -65,7 +65,7 @@ const TextBlock = ({ blok }) => {
 
   return (
     <div
-      className={`z-10 relative leading-loose [&>h1]:my-6 [&>h2]:text-4xl [&>h3]:my-4 [&>h3]:text-2xl [&>h4]:text-xl [&>ol]:list-decimal [&>ol]:pl-5 [&>ol]:my-5 text_block ${textAlign(blok.textAlign)} ${maxWidth(blok.maxWidth)} ${blok?.name}`}
+      className={`z-10 relative leading-loose [&>h1]:my-6 [&>h2]:text-4xl [&>h3]:my-4 [&>h3]:text-2xl [&>h4]:text-xl [&>ol]:list-decimal [&>ol]:pl-5 [&>ol]:my-5 [&>ul]:mb-8 [&>ul]:list-disc [&>ul]:pl-4 [&>ul>li]:leading-8 text_block ${textAlign(blok.textAlign)} ${maxWidth(blok.maxWidth)} ${blok?.name}`}
       {...storyblokEditable(blok)}
       style={addedClasses}
     >
