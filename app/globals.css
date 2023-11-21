@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-    @apply text-3xl lg:text-4xl xl:leading-snug mb-4 font-black
+    @apply text-3xl lg:text-4xl leading-tight lg:leading-tight xl:leading-snug mb-4 font-black
 }
 
 h3 {
