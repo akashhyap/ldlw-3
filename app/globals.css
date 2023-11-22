@@ -377,7 +377,7 @@ h3 {
 }
 
 .grid_reverse .image_block {
-    @apply lg:order-2
+    @apply md:order-2
 }
 
 .highlighter .text_block h3 {
